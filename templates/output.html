@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<style type="text/css">
+.bold{
+  font-style: bold;
+  text-color: rgb(12, 92, 146);
+}
+</style>
+<h2>Number of Positive Reviews <span class="badge  bg-info text-dark">{{data.Positive_Reviews}}</span></h1>
+<h2>Number of Negative Reviews <span class="badge  bg-info text-dark">{{data.Negative_Reviews}}</span></h1>
+{% for post in posts %}
+     
+<article class="media content-section">
+  <div class="media-body">
+    <div class="article-metadata">
+      <a class="mr-2" href="#">{{ post.author }}</a>
+      <small class="text-muted">{{ post.title}}</small>
+    </div>
+    <h2><a class="article-title" href="#">{{ post.title }}</a></h2>
+    <p class="article-content">{{ post.content }}</p>
+    <p class="article-content bold"><b>{{ post.sentiment }}</b></p>
+  </div>
+</article>
+
+{% endfor %}
+{% endblock content %}
