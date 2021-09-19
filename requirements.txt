@@ -1,0 +1,13 @@
+requests==2.26.0
+Flask==1.1.2
+Flask_WTF==0.15.1
+pandas==1.2.1
+nltk==3.6.1
+matplotlib==3.3.4
+selectorlib==0.16.0
+WTForms==2.3.3
+seaborn==0.11.1
+scikit_plot==0.3.7
+wordcloud==1.8.1
+python_dateutil==2.8.2
+scikit_learn==0.24.2
